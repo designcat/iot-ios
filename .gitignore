@@ -4,6 +4,9 @@ build/
 DerivedData
 
 # Xcodeのプライベート設定（ウィンドウサイズ、ブックマーク、ブレイクポイントなど）
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
 # http://lists.apple.com/archives/xcode-users/2004/Jan/msg00193.html
 *.pbxuser
 # http://lists.apple.com/archives/xcode-users/2007/Oct/msg00465.html
