@@ -30,7 +30,7 @@
 
 # Xcode起動の度に編集される
 # UserInterfaceState.xcuserstateなど
-# *.xcuserstate
+*.xcuserstate
 
 # VCSのメタデータが含まれ、コミットしてしまうとmergeが困難になるなどの問題が発生する
 # http://stackoverflow.com/questions/18340453/should-xccheckout-files-in-xcode5-be-ignored-under-vcs
