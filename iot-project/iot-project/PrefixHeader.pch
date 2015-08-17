@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  kadenApp
+//
+//  Created by Shinnosuke Komiya on 2015/07/15.
+//  Copyright (c) 2015年 Shinnosuke Komiya. All rights reserved.
+//
+
+#ifndef kadenApp_PrefixHeader_pch
+#define kadenApp_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+
+#define CONNECT_BUTTON 0
+#define DISCONNECT_BUTTON 1
+#define LED_ON_BUTTON 2
+#define LED_OFF_BUTTON 3
+
+#define UUID_VSP_SERVICE					@"569a1101-b87f-490c-92cb-11ba5ea5167c" //VSP
+#define UUID_RX                             @"569a2001-b87f-490c-92cb-11ba5ea5167c" //RX
+#define UUID_TX								@"569a2000-b87f-490c-92cb-11ba5ea5167c" //TX
