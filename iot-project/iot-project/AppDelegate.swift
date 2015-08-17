@@ -8,15 +8,27 @@
 
 import UIKit
 import CoreData
+import Socket_IO_Client_Swift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var socket: SocketIOClient!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // ここからsocetio
+        socket = SocketIOClient(socketURL: "http://localhost:8080/socket.io/", opts: nil)
+        socket.on("connect") { data in
+            println("socket connected!!")
+        }
+        socket.on("disconnect") { data in
+            println("socket disconnected!!")
+        }
+        socket.connect()
+        // ここまでsocketio
+
         return true
     }
 
