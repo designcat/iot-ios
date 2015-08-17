@@ -8,10 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		56B1B326428AF9BD8B1F76A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9CE950B0999EC5DD16C01C /* libPods.a */; };
+		C862DDE41B81742700E14CD2 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862DDE31B81742700E14CD2 /* TopViewController.swift */; };
+		C862DDE61B81747F00E14CD2 /* ConnectBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862DDE51B81747F00E14CD2 /* ConnectBluetoothViewController.swift */; };
+		C862DDE81B8174B500E14CD2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862DDE71B8174B500E14CD2 /* RegisterViewController.swift */; };
+		C862DDEA1B81751300E14CD2 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862DDE91B81751300E14CD2 /* RoomsViewController.swift */; };
+		C862DDEC1B8175A100E14CD2 /* MembersWaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862DDEB1B8175A100E14CD2 /* MembersWaitingViewController.swift */; };
+		C862DDEE1B8175DD00E14CD2 /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862DDED1B8175DD00E14CD2 /* MembersViewController.swift */; };
+		C862DDF01B81762E00E14CD2 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862DDEF1B81762E00E14CD2 /* TimerViewController.swift */; };
+		C862DDF21B81766100E14CD2 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C862DDF11B81766100E14CD2 /* PlayViewController.swift */; };
 		CFB0CFBA1B7CE0AB00B9B41A /* BLEBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB0CFB91B7CE0AB00B9B41A /* BLEBaseClass.m */; };
 		CFC0F3101B70832A004CA7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */; };
 		CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F3111B70832A004CA7F0 /* iot_project.xcdatamodeld */; };
-		CFC0F3151B70832A004CA7F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F3141B70832A004CA7F0 /* ViewController.swift */; };
 		CFC0F3181B70832A004CA7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC0F3161B70832A004CA7F0 /* Main.storyboard */; };
 		CFC0F31A1B70832A004CA7F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC0F3191B70832A004CA7F0 /* Images.xcassets */; };
 		CFC0F31D1B70832A004CA7F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC0F31B1B70832A004CA7F0 /* LaunchScreen.xib */; };
@@ -32,13 +39,20 @@
 		02860C3172F5C5725C43DF74 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2EF80024441C9CCE95B910BC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AC9CE950B0999EC5DD16C01C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C862DDE31B81742700E14CD2 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		C862DDE51B81747F00E14CD2 /* ConnectBluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectBluetoothViewController.swift; sourceTree = "<group>"; };
+		C862DDE71B8174B500E14CD2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C862DDE91B81751300E14CD2 /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		C862DDEB1B8175A100E14CD2 /* MembersWaitingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersWaitingViewController.swift; sourceTree = "<group>"; };
+		C862DDED1B8175DD00E14CD2 /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		C862DDEF1B81762E00E14CD2 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		C862DDF11B81766100E14CD2 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		CFB0CFB81B7CE0AB00B9B41A /* BLEBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEBaseClass.h; sourceTree = "<group>"; };
 		CFB0CFB91B7CE0AB00B9B41A /* BLEBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEBaseClass.m; sourceTree = "<group>"; };
 		CFC0F30A1B70832A004CA7F0 /* iot-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iot-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC0F30E1B70832A004CA7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC0F3121B70832A004CA7F0 /* iot_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iot_project.xcdatamodel; sourceTree = "<group>"; };
-		CFC0F3141B70832A004CA7F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFC0F3171B70832A004CA7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFC0F3191B70832A004CA7F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CFC0F31C1B70832A004CA7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,6 +97,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C862DDF31B81768200E14CD2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C862DDE31B81742700E14CD2 /* TopViewController.swift */,
+				C862DDE51B81747F00E14CD2 /* ConnectBluetoothViewController.swift */,
+				C862DDE71B8174B500E14CD2 /* RegisterViewController.swift */,
+				C862DDE91B81751300E14CD2 /* RoomsViewController.swift */,
+				C862DDEB1B8175A100E14CD2 /* MembersWaitingViewController.swift */,
+				C862DDED1B8175DD00E14CD2 /* MembersViewController.swift */,
+				C862DDEF1B81762E00E14CD2 /* TimerViewController.swift */,
+				C862DDF11B81766100E14CD2 /* PlayViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		CFC0F3011B708329004CA7F0 = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */,
-				CFC0F3141B70832A004CA7F0 /* ViewController.swift */,
+				C862DDF31B81768200E14CD2 /* ViewController */,
 				CFC0F3161B70832A004CA7F0 /* Main.storyboard */,
 				CFC0F3191B70832A004CA7F0 /* Images.xcassets */,
 				CFC0F31B1B70832A004CA7F0 /* LaunchScreen.xib */,
@@ -279,8 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC0F3151B70832A004CA7F0 /* ViewController.swift in Sources */,
+				C862DDF01B81762E00E14CD2 /* TimerViewController.swift in Sources */,
+				C862DDE61B81747F00E14CD2 /* ConnectBluetoothViewController.swift in Sources */,
+				C862DDEE1B8175DD00E14CD2 /* MembersViewController.swift in Sources */,
+				C862DDE41B81742700E14CD2 /* TopViewController.swift in Sources */,
+				C862DDF21B81766100E14CD2 /* PlayViewController.swift in Sources */,
+				C862DDEC1B8175A100E14CD2 /* MembersWaitingViewController.swift in Sources */,
 				CFB0CFBA1B7CE0AB00B9B41A /* BLEBaseClass.m in Sources */,
+				C862DDEA1B81751300E14CD2 /* RoomsViewController.swift in Sources */,
+				C862DDE81B8174B500E14CD2 /* RegisterViewController.swift in Sources */,
 				CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */,
 				CFC0F3101B70832A004CA7F0 /* AppDelegate.swift in Sources */,
 			);
