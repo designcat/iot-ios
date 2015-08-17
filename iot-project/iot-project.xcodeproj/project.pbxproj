@@ -11,11 +11,10 @@
 		CFB0CFEF1B7ED52000B9B41A /* BLEBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB0CFEE1B7ED52000B9B41A /* BLEBaseClass.m */; };
 		CFC0F3101B70832A004CA7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */; };
 		CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F3111B70832A004CA7F0 /* iot_project.xcdatamodeld */; };
-		CFC0F3151B70832A004CA7F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F3141B70832A004CA7F0 /* ViewController.swift */; };
-		CFC0F3181B70832A004CA7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC0F3161B70832A004CA7F0 /* Main.storyboard */; };
 		CFC0F31A1B70832A004CA7F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC0F3191B70832A004CA7F0 /* Images.xcassets */; };
 		CFC0F31D1B70832A004CA7F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC0F31B1B70832A004CA7F0 /* LaunchScreen.xib */; };
 		CFC0F3291B70832A004CA7F0 /* iot_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F3281B70832A004CA7F0 /* iot_projectTests.swift */; };
+		CFCAB2FB1B824685007DCDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCAB2F91B824685007DCDC5 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +39,12 @@
 		CFC0F30E1B70832A004CA7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC0F3121B70832A004CA7F0 /* iot_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iot_project.xcdatamodel; sourceTree = "<group>"; };
-		CFC0F3141B70832A004CA7F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CFC0F3171B70832A004CA7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFC0F3191B70832A004CA7F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CFC0F31C1B70832A004CA7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CFC0F3221B70832A004CA7F0 /* iot-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iot-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC0F3271B70832A004CA7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFC0F3281B70832A004CA7F0 /* iot_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iot_projectTests.swift; sourceTree = "<group>"; };
+		CFCAB2FA1B824685007DCDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +117,7 @@
 			children = (
 				CFB0CFF01B7ED53900B9B41A /* BLE */,
 				CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */,
-				CFC0F3141B70832A004CA7F0 /* ViewController.swift */,
-				CFC0F3161B70832A004CA7F0 /* Main.storyboard */,
+				CFCAB2F91B824685007DCDC5 /* Main.storyboard */,
 				CFC0F3191B70832A004CA7F0 /* Images.xcassets */,
 				CFC0F31B1B70832A004CA7F0 /* LaunchScreen.xib */,
 				CFC0F3111B70832A004CA7F0 /* iot_project.xcdatamodeld */,
@@ -238,9 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC0F3181B70832A004CA7F0 /* Main.storyboard in Resources */,
 				CFC0F31D1B70832A004CA7F0 /* LaunchScreen.xib in Resources */,
 				CFC0F31A1B70832A004CA7F0 /* Images.xcassets in Resources */,
+				CFCAB2FB1B824685007DCDC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC0F3151B70832A004CA7F0 /* ViewController.swift in Sources */,
 				CFB0CFEF1B7ED52000B9B41A /* BLEBaseClass.m in Sources */,
 				CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */,
 				CFC0F3101B70832A004CA7F0 /* AppDelegate.swift in Sources */,
@@ -317,20 +313,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CFC0F3161B70832A004CA7F0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CFC0F3171B70832A004CA7F0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CFC0F31B1B70832A004CA7F0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CFC0F31C1B70832A004CA7F0 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CFCAB2F91B824685007DCDC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFCAB2FA1B824685007DCDC5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
