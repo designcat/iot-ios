@@ -17,6 +17,7 @@
 		CFCAB2FB1B824685007DCDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCAB2F91B824685007DCDC5 /* Main.storyboard */; };
 		CFCAB2FF1B82473C007DCDC5 /* ConnectBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */; };
 		CFCAB3011B8247B3007DCDC5 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAB3001B8247B3007DCDC5 /* TopViewController.swift */; };
+		CFCAB3031B84129F007DCDC5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAB3021B84129F007DCDC5 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CFCAB2FA1B824685007DCDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectBluetoothViewController.swift; sourceTree = "<group>"; };
 		CFCAB3001B8247B3007DCDC5 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		CFCAB3021B84129F007DCDC5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */,
 				CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */,
 				CFCAB3001B8247B3007DCDC5 /* TopViewController.swift */,
+				CFCAB3021B84129F007DCDC5 /* RegisterViewController.swift */,
 				CFCAB2F91B824685007DCDC5 /* Main.storyboard */,
 				CFC0F3191B70832A004CA7F0 /* Images.xcassets */,
 				CFC0F31B1B70832A004CA7F0 /* LaunchScreen.xib */,
@@ -297,6 +300,7 @@
 				CFB0CFEF1B7ED52000B9B41A /* BLEBaseClass.m in Sources */,
 				CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */,
 				CFCAB2FF1B82473C007DCDC5 /* ConnectBluetoothViewController.swift in Sources */,
+				CFCAB3031B84129F007DCDC5 /* RegisterViewController.swift in Sources */,
 				CFC0F3101B70832A004CA7F0 /* AppDelegate.swift in Sources */,
 				CFCAB3011B8247B3007DCDC5 /* TopViewController.swift in Sources */,
 			);
