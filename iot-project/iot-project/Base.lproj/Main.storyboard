@@ -35,7 +35,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2AM-5y-c6M" kind="push" id="xVA-2G-RIO"/>
+                                    <segue destination="gce-9U-Q9G" kind="push" id="6l2-g4-7oK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,12 +58,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="Mm5-gA-0hP"/>
                     <connections>
-                        <segue destination="xX1-gy-erq" kind="push" id="XCx-ZQ-pxh"/>
+                        <segue destination="2AM-5y-c6M" kind="push" id="voE-3q-cKS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FnR-8Z-w8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1217" y="188"/>
+            <point key="canvasLocation" x="847" y="188"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="gf8-gE-R4O">
@@ -76,12 +76,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="P7R-Gv-a4c"/>
                     <connections>
-                        <segue destination="gce-9U-Q9G" kind="push" id="jpa-eQ-Jy1"/>
+                        <segue destination="xX1-gy-erq" kind="push" id="IOi-P9-vzS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76w-c9-7sz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="188"/>
+            <point key="canvasLocation" x="1238" y="188"/>
         </scene>
         <!--Rooms View Controller-->
         <scene sceneID="C2U-M6-YVu">
