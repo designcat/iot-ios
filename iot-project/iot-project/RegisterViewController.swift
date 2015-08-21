@@ -10,6 +10,15 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet let UILabel : userName!
+    @IBOutlet var UITextField : userNameTextField!
+    @IBOutlet let UILabel : pwd!
+    @IBOutlet var UITextField : pwdTexField!
+    @IBOutlet let UIButton : registerBtn!
+    
+    
+    var afNetworking : AFNetworking?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +30,7 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction 
 
     /*
     // MARK: - Navigation
