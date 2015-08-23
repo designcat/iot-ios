@@ -9,28 +9,60 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
-    @IBOutlet let UILabel : userName!
-    @IBOutlet var UITextField : userNameTextField!
-    @IBOutlet let UILabel : pwd!
-    @IBOutlet var UITextField : pwdTexField!
-    @IBOutlet let UIButton : registerBtn!
     
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var pwdTextField: UITextField!
     
-    var afNetworking : AFNetworking?
+//    var afNetworking : AFNetworking?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func registerBtnTouched(sender: AnyObject) {
+        println(userNameTextField.text)
+        
+        if (userNameTextField.text.isEmpty) {
+            println("ユーザー名未入力")
+            
+            //アラート
+        }
+        else if (pwdTextField.text.isEmpty) {
+            println("パスワード未入力")
+            
+            //アラート
+        }
+        else {
+            sendUserData()
+        }
+    }
+    
+    func sendUserData() {
+        //通信
+        
+        toRoomView()
+    }
+    
+    func toRoomView() {
+        performSegueWithIdentifier("ToRoomView", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "ToRoomView") {
+            println("部屋選択画面へ移動")
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction 
+    
+//    @IBAction 
 
     /*
     // MARK: - Navigation

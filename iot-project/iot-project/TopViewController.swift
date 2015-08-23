@@ -10,7 +10,7 @@ import UIKit
 
 class TopViewController: UIViewController {
 
-    @IBOutlet var UIButton : nextBtn!
+    @IBOutlet weak var nextBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 

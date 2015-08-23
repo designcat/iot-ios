@@ -5,7 +5,7 @@
 //  Created by Shinnosuke Komiya on 2015/08/18.
 //  Copyright (c) 2015年 Shinnosuke Komiya. All rights reserved.
 //
-
+/*
 import UIKit
 
 class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, BLEDeviceClassDelegate {
@@ -63,4 +63,4 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
     }
     */
 
-}
+}*/
