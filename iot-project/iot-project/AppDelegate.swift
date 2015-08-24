@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-//import Socket_IO_Client_Swift
+import Socket_IO_Client_Swift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
