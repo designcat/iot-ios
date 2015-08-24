@@ -23,7 +23,8 @@ class RegisterViewController: UIViewController {
     }
 
     @IBAction func registerBtnTouched(sender: AnyObject) {
-        println(userNameTextField.text)
+        
+        toRoomsView()
         
         if (userNameTextField.text.isEmpty) {
             println("ユーザー名未入力")
@@ -43,15 +44,15 @@ class RegisterViewController: UIViewController {
     func sendUserData() {
         //通信
         
-        toRoomView()
+        toRoomsView()
     }
     
-    func toRoomView() {
-        performSegueWithIdentifier("ToRoomView", sender: nil)
+    func toRoomsView() {
+        performSegueWithIdentifier("ToRoomsView", sender: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "ToRoomView") {
+        if (segue.identifier == "ToRoomsView") {
             println("部屋選択画面へ移動")
         }
     }
