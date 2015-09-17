@@ -124,6 +124,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		CF276DB41BAAB26E00F18335 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CFB0CFF01B7ED53900B9B41A /* BLE */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
 		CFB0CFF01B7ED53900B9B41A /* BLE */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,9 +164,9 @@
 		CFC0F30C1B70832A004CA7F0 /* iot-project */ = {
 			isa = PBXGroup;
 			children = (
+				CF276DB41BAAB26E00F18335 /* lib */,
 				CF276DB11BAA9DB000F18335 /* Model */,
 				C8CC0BC01B89C1750038E7DD /* Controller */,
-				CFB0CFF01B7ED53900B9B41A /* BLE */,
 				CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */,
 				CFCAB2F91B824685007DCDC5 /* Main.storyboard */,
 				CFC0F3191B70832A004CA7F0 /* Images.xcassets */,

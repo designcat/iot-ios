@@ -20,6 +20,7 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
     @IBOutlet var tableView : UITableView!
     var bleName : NSMutableArray = NSMutableArray()
     var bleUUIDs : NSMutableArray = NSMutableArray()
+    var bleRx : NSMutableArray = NSMutableArray()
     var blePeripheral : NSMutableArray = NSMutableArray()
     var centralManager: CBCentralManager!
     var connectBtn : UIButton = UIButton()
@@ -38,6 +39,7 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
         //配列をリセット
         bleName = NSMutableArray()
         bleUUIDs = NSMutableArray()
+        bleRx = NSMutableArray()
         blePeripheral = NSMutableArray()
         
         //CBCentralManagerの初期化
@@ -68,7 +70,7 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
         bleName = NSMutableArray()
         bleUUIDs = NSMutableArray()
         blePeripheral = NSMutableArray()
-        
+        bleRx = NSMutableArray()
         // CoreBluetoothを初期化および始動.
         centralManager = CBCentralManager(delegate: self, queue: nil, options: nil)
     }
@@ -79,30 +81,30 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
     }
     
     @objc(didUpdateValueForCharacteristic:Characteristic:) func didUpdateValueForCharacteristic(device: BLEDeviceClass!, characteristic: CBCharacteristic!) {
-//        if (device == Device)	{
-//            //	キャラクタリスティックを扱う為のクラスを取得し
-//            //	通知されたキャラクタリスティックと比較し同じであれば
-//            //	bufに結果を格納
-//            //iPhone->Device
-//            var rx: CBCharacteristic = Device!.getCharacteristic(UUID_VSP_SERVICE, characteristic: UUID_RX)
-//            if (characteristic == rx)	{
-//                //			uint8_t*	buf = (uint8_t*)[characteristic.value bytes]; //bufに結果が入る
-//                //            NSLog(@"value=%@",characteristic.value);
-//                return;
-//            }
-//            
-//            //Device->iPhone
-//            var tx:CBCharacteristic = Device!.getCharacteristic(UUID_VSP_SERVICE, characteristic: UUID_TX)
-//            if (characteristic == tx)	{
-//                //            NSLog(@"Receive value=%@",characteristic.value);
-//                                //ここでBLEから配列を受け取る
-//                var buf = UnsafePointer<UInt8>(characteristic.value.bytes)
-//                println(buf[0])
-//                var data = characteristic.value
-//       
-//                return;
-//            }
-//        }
+        if (device == Device)	{
+            //	キャラクタリスティックを扱う為のクラスを取得し
+            //	通知されたキャラクタリスティックと比較し同じであれば
+            //	bufに結果を格納
+            //iPhone->Device
+            var rx: CBCharacteristic = Device!.getCharacteristic(UUID_VSP_SERVICE, characteristic: UUID_RX)
+            if (characteristic == rx)	{
+                //			uint8_t*	buf = (uint8_t*)[characteristic.value bytes]; //bufに結果が入る
+                //            NSLog(@"value=%@",characteristic.value);
+                return;
+            }
+            
+            //Device->iPhone
+            var tx:CBCharacteristic = Device!.getCharacteristic(UUID_VSP_SERVICE, characteristic: UUID_TX)
+            if (characteristic == tx)	{
+                //            NSLog(@"Receive value=%@",characteristic.value);
+                                //ここでBLEから配列を受け取る
+                var buf = UnsafePointer<UInt8>(characteristic.value.bytes)
+                println(buf[0])
+                var data = characteristic.value
+       
+                return;
+            }
+        }
     }
 
     //セントラルマネージャの状態変化を取得
@@ -140,9 +142,9 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
         bleName.addObject(name!)
         blePeripheral.addObject(peripheral)
         bleUUIDs.addObject(peripheral.identifier.UUIDString)
-        
         tableView.reloadData()
     }
+    
     
     /*
     Cellが選択された際に呼び出される.
