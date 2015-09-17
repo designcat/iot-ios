@@ -13,6 +13,7 @@
 		C8CC0BC81B89C1B00038E7DD /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */; };
 		C8CC0BC91B89C1B00038E7DD /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC41B89C1B00038E7DD /* RoomsViewController.swift */; };
 		C8CC0BCA1B89C1B00038E7DD /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC51B89C1B00038E7DD /* TimerViewController.swift */; };
+		CF276DB31BAA9DDA00F18335 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF276DB21BAA9DDA00F18335 /* ApiManager.swift */; };
 		CFB0CFEF1B7ED52000B9B41A /* BLEBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB0CFEE1B7ED52000B9B41A /* BLEBaseClass.m */; };
 		CFC0F3101B70832A004CA7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */; };
 		CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F3111B70832A004CA7F0 /* iot_project.xcdatamodeld */; };
@@ -44,6 +45,7 @@
 		C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		C8CC0BC41B89C1B00038E7DD /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		C8CC0BC51B89C1B00038E7DD /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		CF276DB21BAA9DDA00F18335 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		CFB0CFEC1B7ED52000B9B41A /* iot-project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iot-project-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		CFB0CFED1B7ED52000B9B41A /* BLEBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEBaseClass.h; path = ../BLEBaseClass.h; sourceTree = "<group>"; };
 		CFB0CFEE1B7ED52000B9B41A /* BLEBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLEBaseClass.m; path = ../BLEBaseClass.m; sourceTree = "<group>"; };
@@ -99,7 +101,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C8CC0BC01B89C1750038E7DD /* ViewController */ = {
+		C8CC0BC01B89C1750038E7DD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */,
@@ -111,7 +113,15 @@
 				C8CC0BC41B89C1B00038E7DD /* RoomsViewController.swift */,
 				C8CC0BC51B89C1B00038E7DD /* TimerViewController.swift */,
 			);
-			name = ViewController;
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CF276DB11BAA9DB000F18335 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF276DB21BAA9DDA00F18335 /* ApiManager.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		CFB0CFF01B7ED53900B9B41A /* BLE */ = {
@@ -146,7 +156,8 @@
 		CFC0F30C1B70832A004CA7F0 /* iot-project */ = {
 			isa = PBXGroup;
 			children = (
-				C8CC0BC01B89C1750038E7DD /* ViewController */,
+				CF276DB11BAA9DB000F18335 /* Model */,
+				C8CC0BC01B89C1750038E7DD /* Controller */,
 				CFB0CFF01B7ED53900B9B41A /* BLE */,
 				CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */,
 				CFCAB2F91B824685007DCDC5 /* Main.storyboard */,
@@ -340,6 +351,7 @@
 				C8CC0BC81B89C1B00038E7DD /* PlayViewController.swift in Sources */,
 				CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */,
 				C8CC0BC71B89C1B00038E7DD /* MembersWaitingViewController.swift in Sources */,
+				CF276DB31BAA9DDA00F18335 /* ApiManager.swift in Sources */,
 				CFCAB2FF1B82473C007DCDC5 /* ConnectBluetoothViewController.swift in Sources */,
 				C8CC0BC61B89C1B00038E7DD /* MembersViewController.swift in Sources */,
 				CFCAB3031B84129F007DCDC5 /* RegisterViewController.swift in Sources */,
