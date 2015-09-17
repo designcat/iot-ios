@@ -17,13 +17,10 @@ class RoomsViewController: UIViewController {
         
         roomsArray = NSMutableArray(array: ["部屋1", "部屋2", "部屋3"])
         println(roomsArray)
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func createRoomBtnTouched(sender: AnyObject) {
@@ -47,16 +44,4 @@ class RoomsViewController: UIViewController {
             
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

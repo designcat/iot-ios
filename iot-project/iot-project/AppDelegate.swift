@@ -28,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         socket.connect()
         // ここまでsocketio
-
         return true
     }
 
