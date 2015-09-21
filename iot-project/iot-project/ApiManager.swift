@@ -47,5 +47,4 @@ class ApiManager {
         manager.params = ["": userId, "": nickName]
         return manager
     }
-    
 }
