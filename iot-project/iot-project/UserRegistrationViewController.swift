@@ -11,12 +11,14 @@ import UIKit
 class UserRegistrationViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var userNameTextField: UITextField!
+    var apiManager: ApiManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        userNameTextField.delegate = self
 //        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        userNameTextField.delegate = self
     }
     
     //キーボードのリターンボタンが押されたとき
@@ -37,13 +39,19 @@ class UserRegistrationViewController: UIViewController, UITextFieldDelegate {
             alert.show()
         }
         else {
-            transitionToUserRegistrationView()
+            transitionToRoomsView()
 
         }
     }
     
+    //サーバーに送信（仮）
+    func sendUserName() {
+        apiManager = ApiManager.init(entryPoint: "String")
+        apiManager.request()
+    }
+    
     //部屋一覧画面へ移動
-    func transitionToUserRegistrationView() {
+    func transitionToRoomsView() {
         let storyboard = UIStoryboard(name: "Rooms", bundle: nil)
         let nextView = storyboard.instantiateViewControllerWithIdentifier("RoomsVC")
         self.navigationController?.pushViewController(nextView, animated: true)

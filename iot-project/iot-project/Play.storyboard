@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Play View Controller-->
         <scene sceneID="rHO-KJ-HsS">
             <objects>
-                <viewController id="000-JJ-cNc" customClass="PlayViewController" customModule="iot_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="playVC" id="000-JJ-cNc" customClass="PlayViewController" customModule="iot_project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ah4-k6-liA"/>
                         <viewControllerLayoutGuide type="bottom" id="xzW-P3-kkS"/>
@@ -15,8 +16,69 @@
                     <view key="view" contentMode="scaleToFill" id="MJw-EL-PKN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8g-Ws-63K">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="118"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-X3-7vi">
+                                        <rect key="frame" x="16" y="26" width="240" height="77"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQa-XL-sR4">
+                                                <rect key="frame" x="64" y="0.0" width="176" height="77"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.80000000000000004" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="bkY-Lm-6hn"/>
+                                            <constraint firstAttribute="height" constant="77" id="cV2-se-WTw"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Petan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oS-24-6cl">
+                                        <rect key="frame" x="270" y="26" width="61" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.9882352941176471" green="0.97647058823529409" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.39215686274509803" green="0.76078431372549016" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Fac-X3-7vi" firstAttribute="top" secondItem="t8g-Ws-63K" secondAttribute="top" constant="26" id="2oF-Fk-FRl"/>
+                                    <constraint firstItem="Fac-X3-7vi" firstAttribute="leading" secondItem="t8g-Ws-63K" secondAttribute="leading" constant="25" id="IPh-Fw-Zfx"/>
+                                    <constraint firstItem="Fac-X3-7vi" firstAttribute="centerY" secondItem="t8g-Ws-63K" secondAttribute="centerY" id="VIw-TU-dBf"/>
+                                    <constraint firstItem="Fac-X3-7vi" firstAttribute="leading" secondItem="t8g-Ws-63K" secondAttribute="leading" constant="16" id="Z0F-lr-44n"/>
+                                    <constraint firstItem="2oS-24-6cl" firstAttribute="leading" secondItem="Fac-X3-7vi" secondAttribute="trailing" constant="14" id="kdE-Q9-VZH"/>
+                                    <constraint firstItem="2oS-24-6cl" firstAttribute="top" secondItem="t8g-Ws-63K" secondAttribute="top" constant="26" id="ltM-RK-TzB"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IPh-Fw-Zfx"/>
+                                        <exclude reference="VIw-TU-dBf"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-7M-DOA">
+                                <rect key="frame" x="268" y="54" width="332" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:20:25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIe-rU-MYj">
+                                        <rect key="frame" x="73" y="0.0" width="251" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="t8g-Ws-63K" id="7nb-KX-25a"/>
+                        <outlet property="pointLabel" destination="SQa-XL-sR4" id="O2k-D7-jaN"/>
+                        <outlet property="roleLabel" destination="2oS-24-6cl" id="1uh-1u-QKT"/>
+                        <outlet property="timeLimitLabel" destination="qIe-rU-MYj" id="BN9-10-Zz1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtI-kc-75p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -138,10 +138,10 @@
 				CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */,
 				CFCAB3001B8247B3007DCDC5 /* TopViewController.swift */,
 				C852D6851BB1449D002882B9 /* UserRegistrationViewController.swift */,
+				C8CC0BC41B89C1B00038E7DD /* RoomsViewController.swift */,
 				C8CC0BC11B89C1B00038E7DD /* MembersViewController.swift */,
 				C8CC0BC21B89C1B00038E7DD /* MembersWaitingViewController.swift */,
 				C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */,
-				C8CC0BC41B89C1B00038E7DD /* RoomsViewController.swift */,
 				C8CC0BC51B89C1B00038E7DD /* TimerViewController.swift */,
 			);
 			name = Controller;
