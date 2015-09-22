@@ -12,14 +12,14 @@ class PlayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        socket = appDelegate.socket
-        
-        socket.on("from_server") { (data, emitter) in
-            if let message = data as? [String] {
-                self.myLabel.text = message[0]
-            }
-        }
+//        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//        socket = appDelegate.socket
+//        
+//        socket.on("from_server") { (data, emitter) in
+//            if let message = data as? [String] {
+//                self.myLabel.text = message[0]
+//            }
+//        }
     }
 
     override func didReceiveMemoryWarning() {

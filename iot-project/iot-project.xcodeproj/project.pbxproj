@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2623A3BF47C9F35E3EE107F8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C436FE7A7552DBAA1A651B12 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C852D6821BB105F1002882B9 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C852D6811BB105F1002882B9 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8CC0BC61B89C1B00038E7DD /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC11B89C1B00038E7DD /* MembersViewController.swift */; };
 		C8CC0BC71B89C1B00038E7DD /* MembersWaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC21B89C1B00038E7DD /* MembersWaitingViewController.swift */; };
 		C8CC0BC81B89C1B00038E7DD /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */; };
@@ -47,6 +48,7 @@
 		02860C3172F5C5725C43DF74 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2EF80024441C9CCE95B910BC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C436FE7A7552DBAA1A651B12 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C852D6811BB105F1002882B9 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Pods/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
 		C8CC0BC11B89C1B00038E7DD /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
 		C8CC0BC21B89C1B00038E7DD /* MembersWaitingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersWaitingViewController.swift; sourceTree = "<group>"; };
 		C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		CFC0F3011B708329004CA7F0 = {
 			isa = PBXGroup;
 			children = (
+				C852D6811BB105F1002882B9 /* MBProgressHUD.h */,
 				CFC0F30C1B70832A004CA7F0 /* iot-project */,
 				CFC0F3251B70832A004CA7F0 /* iot-projectTests */,
 				CFC0F30B1B70832A004CA7F0 /* Products */,
@@ -235,6 +238,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C852D6801BB10548002882B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C852D6821BB105F1002882B9 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		CFC0F3091B70832A004CA7F0 /* iot-project */ = {
 			isa = PBXNativeTarget;
@@ -246,6 +260,7 @@
 				CFC0F3081B70832A004CA7F0 /* Resources */,
 				8213286F12CCF4E29FA56890 /* Copy Pods Resources */,
 				CAB9F68822173DA5F3C0BB11 /* Embed Pods Frameworks */,
+				C852D6801BB10548002882B9 /* Headers */,
 			);
 			buildRules = (
 			);

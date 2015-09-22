@@ -97,7 +97,7 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
             if (characteristic == tx)	{
                 //            NSLog(@"Receive value=%@",characteristic.value);
                                 //ここでBLEから配列を受け取る
-                var buf = UnsafePointer<UInt8>(characteristic.value.bytes)
+                var buf = UnsafePointer<UInt8>(characteristic.value!.bytes)
                 print(buf[0])
                 var data = characteristic.value
        

@@ -21,10 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // ここからsocetio
         socket = SocketIOClient(socketURL: "http://localhost:8080/socket.io/", opts: nil)
         socket.on("connect") { data in
-            println("socket connected!!")
+            print("socket connected!!")
         }
         socket.on("disconnect") { data in
-            println("socket disconnected!!")
+            print("socket disconnected!!")
         }
         socket.connect()
         // ここまでsocketio

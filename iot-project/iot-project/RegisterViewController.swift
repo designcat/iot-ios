@@ -23,12 +23,12 @@ class RegisterViewController: UIViewController {
         
         toRoomsView()
         
-        if (userNameTextField.text.isEmpty) {
+        if (userNameTextField.text!.isEmpty) {
             print("ユーザー名未入力")
             
             //アラート
         }
-        else if (pwdTextField.text.isEmpty) {
+        else if (pwdTextField.text!.isEmpty) {
             print("パスワード未入力")
             
             //アラート
