@@ -4,3 +4,4 @@ use_frameworks!
 pod 'AFNetworking'
 pod 'Socket.IO-Client-Swift'
 pod 'MBProgressHUD', '~> 0.9.1'
+pod 'GoogleMaps'
