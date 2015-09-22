@@ -31,7 +31,6 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
     }
 
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -152,10 +151,8 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
         print("Num: \(indexPath.row)")
         print("Uuid: \(bleUUIDs[indexPath.row])")
         print("Name: \(bleName[indexPath.row])")
-        
-        
     }
-    
+
     // セルの行数
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return bleUUIDs.count
@@ -172,5 +169,17 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
         cell.detailTextLabel!.text = "\(bleUUIDs[indexPath.row])"
         cell.detailTextLabel!.font = UIFont.systemFontOfSize(12)
         return cell
+    }
+    
+    //次へボタン(開発用)が押されたとき
+    @IBAction func nextBtnTouched(sender: AnyObject) {
+        transitionToUserRegistrationView()
+    }
+    
+    //ユーザー登録画面へ移動
+    func transitionToUserRegistrationView() {
+        let storyboard = UIStoryboard(name: "UserRegistration", bundle: nil)
+        let nextView = storyboard.instantiateViewControllerWithIdentifier("UserRegistrationVC")
+        self.navigationController?.pushViewController(nextView, animated: true)
     }
 }

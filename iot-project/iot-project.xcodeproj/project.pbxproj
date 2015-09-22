@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		2623A3BF47C9F35E3EE107F8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C436FE7A7552DBAA1A651B12 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C852D6821BB105F1002882B9 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C852D6811BB105F1002882B9 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C852D6841BB14487002882B9 /* UserRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C852D6831BB14487002882B9 /* UserRegistration.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C852D6861BB1449D002882B9 /* UserRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C852D6851BB1449D002882B9 /* UserRegistrationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C8CC0BC61B89C1B00038E7DD /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC11B89C1B00038E7DD /* MembersViewController.swift */; };
 		C8CC0BC71B89C1B00038E7DD /* MembersWaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC21B89C1B00038E7DD /* MembersWaitingViewController.swift */; };
 		C8CC0BC81B89C1B00038E7DD /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */; };
 		C8CC0BC91B89C1B00038E7DD /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC41B89C1B00038E7DD /* RoomsViewController.swift */; };
 		C8CC0BCA1B89C1B00038E7DD /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC51B89C1B00038E7DD /* TimerViewController.swift */; };
 		C8CEF8B51BAFBAA8005B4459 /* ConnectBluetooth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8B41BAFBAA8005B4459 /* ConnectBluetooth.storyboard */; };
-		C8CEF8B71BAFBABC005B4459 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8B61BAFBABC005B4459 /* Register.storyboard */; };
 		C8CEF8B91BAFBACA005B4459 /* Members.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8B81BAFBACA005B4459 /* Members.storyboard */; };
 		C8CEF8BB1BAFBADA005B4459 /* MembersWaiting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8BA1BAFBADA005B4459 /* MembersWaiting.storyboard */; };
 		C8CEF8BD1BAFBAE4005B4459 /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8BC1BAFBAE4005B4459 /* Play.storyboard */; };
@@ -31,7 +32,6 @@
 		CFCAB2FB1B824685007DCDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCAB2F91B824685007DCDC5 /* Main.storyboard */; };
 		CFCAB2FF1B82473C007DCDC5 /* ConnectBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */; };
 		CFCAB3011B8247B3007DCDC5 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAB3001B8247B3007DCDC5 /* TopViewController.swift */; };
-		CFCAB3031B84129F007DCDC5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAB3021B84129F007DCDC5 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,13 +49,14 @@
 		2EF80024441C9CCE95B910BC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C436FE7A7552DBAA1A651B12 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C852D6811BB105F1002882B9 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Pods/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		C852D6831BB14487002882B9 /* UserRegistration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserRegistration.storyboard; sourceTree = "<group>"; };
+		C852D6851BB1449D002882B9 /* UserRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewController.swift; sourceTree = "<group>"; };
 		C8CC0BC11B89C1B00038E7DD /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
 		C8CC0BC21B89C1B00038E7DD /* MembersWaitingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersWaitingViewController.swift; sourceTree = "<group>"; };
 		C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		C8CC0BC41B89C1B00038E7DD /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		C8CC0BC51B89C1B00038E7DD /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		C8CEF8B41BAFBAA8005B4459 /* ConnectBluetooth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConnectBluetooth.storyboard; sourceTree = "<group>"; };
-		C8CEF8B61BAFBABC005B4459 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		C8CEF8B81BAFBACA005B4459 /* Members.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Members.storyboard; sourceTree = "<group>"; };
 		C8CEF8BA1BAFBADA005B4459 /* MembersWaiting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MembersWaiting.storyboard; sourceTree = "<group>"; };
 		C8CEF8BC1BAFBAE4005B4459 /* Play.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Play.storyboard; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		CFCAB2FA1B824685007DCDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectBluetoothViewController.swift; sourceTree = "<group>"; };
 		CFCAB3001B8247B3007DCDC5 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
-		CFCAB3021B84129F007DCDC5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +122,11 @@
 			children = (
 				CFCAB2F91B824685007DCDC5 /* Main.storyboard */,
 				C8CEF8B41BAFBAA8005B4459 /* ConnectBluetooth.storyboard */,
-				C8CEF8B61BAFBABC005B4459 /* Register.storyboard */,
+				C852D6831BB14487002882B9 /* UserRegistration.storyboard */,
+				C8CEF8BE1BAFBAEE005B4459 /* Rooms.storyboard */,
 				C8CEF8B81BAFBACA005B4459 /* Members.storyboard */,
 				C8CEF8BA1BAFBADA005B4459 /* MembersWaiting.storyboard */,
 				C8CEF8BC1BAFBAE4005B4459 /* Play.storyboard */,
-				C8CEF8BE1BAFBAEE005B4459 /* Rooms.storyboard */,
 				C8CEF8C01BAFBB06005B4459 /* Timer.storyboard */,
 			);
 			name = storyboard;
@@ -137,7 +137,7 @@
 			children = (
 				CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */,
 				CFCAB3001B8247B3007DCDC5 /* TopViewController.swift */,
-				CFCAB3021B84129F007DCDC5 /* RegisterViewController.swift */,
+				C852D6851BB1449D002882B9 /* UserRegistrationViewController.swift */,
 				C8CC0BC11B89C1B00038E7DD /* MembersViewController.swift */,
 				C8CC0BC21B89C1B00038E7DD /* MembersWaitingViewController.swift */,
 				C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */,
@@ -341,8 +341,8 @@
 				C8CEF8BD1BAFBAE4005B4459 /* Play.storyboard in Resources */,
 				CFCAB2FB1B824685007DCDC5 /* Main.storyboard in Resources */,
 				C8CEF8B91BAFBACA005B4459 /* Members.storyboard in Resources */,
+				C852D6841BB14487002882B9 /* UserRegistration.storyboard in Resources */,
 				C8CEF8BF1BAFBAEE005B4459 /* Rooms.storyboard in Resources */,
-				C8CEF8B71BAFBABC005B4459 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,13 +409,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFB0CFEF1B7ED52000B9B41A /* BLEBaseClass.m in Sources */,
+				C852D6861BB1449D002882B9 /* UserRegistrationViewController.swift in Sources */,
 				C8CC0BC81B89C1B00038E7DD /* PlayViewController.swift in Sources */,
 				CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */,
 				C8CC0BC71B89C1B00038E7DD /* MembersWaitingViewController.swift in Sources */,
 				CF276DB31BAA9DDA00F18335 /* ApiManager.swift in Sources */,
 				CFCAB2FF1B82473C007DCDC5 /* ConnectBluetoothViewController.swift in Sources */,
 				C8CC0BC61B89C1B00038E7DD /* MembersViewController.swift in Sources */,
-				CFCAB3031B84129F007DCDC5 /* RegisterViewController.swift in Sources */,
 				C8CC0BC91B89C1B00038E7DD /* RoomsViewController.swift in Sources */,
 				CFC0F3101B70832A004CA7F0 /* AppDelegate.swift in Sources */,
 				C8CC0BCA1B89C1B00038E7DD /* TimerViewController.swift in Sources */,
