@@ -117,7 +117,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C802CA931BB005AB001CA049 /* storyboard */ = {
+		C802CA931BB005AB001CA049 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				CFCAB2F91B824685007DCDC5 /* Main.storyboard */,
@@ -129,7 +129,7 @@
 				C8CEF8BC1BAFBAE4005B4459 /* Play.storyboard */,
 				C8CEF8C01BAFBB06005B4459 /* Timer.storyboard */,
 			);
-			name = storyboard;
+			name = View;
 			sourceTree = "<group>";
 		};
 		C8CC0BC01B89C1750038E7DD /* Controller */ = {
@@ -200,7 +200,7 @@
 				CF276DB11BAA9DB000F18335 /* Model */,
 				C8CC0BC01B89C1750038E7DD /* Controller */,
 				CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */,
-				C802CA931BB005AB001CA049 /* storyboard */,
+				C802CA931BB005AB001CA049 /* View */,
 				CFC0F3191B70832A004CA7F0 /* Images.xcassets */,
 				CFC0F31B1B70832A004CA7F0 /* LaunchScreen.xib */,
 				CFC0F3111B70832A004CA7F0 /* iot_project.xcdatamodeld */,
