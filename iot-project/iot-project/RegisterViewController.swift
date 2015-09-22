@@ -24,12 +24,12 @@ class RegisterViewController: UIViewController {
         toRoomsView()
         
         if (userNameTextField.text.isEmpty) {
-            println("ユーザー名未入力")
+            print("ユーザー名未入力")
             
             //アラート
         }
         else if (pwdTextField.text.isEmpty) {
-            println("パスワード未入力")
+            print("パスワード未入力")
             
             //アラート
         }
@@ -49,7 +49,7 @@ class RegisterViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "ToRoomsView") {
-            println("部屋選択画面へ移動")
+            print("部屋選択画面へ移動")
         }
     }
     

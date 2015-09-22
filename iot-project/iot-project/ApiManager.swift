@@ -33,7 +33,7 @@ class ApiManager {
     func request() {
         switch method {
         case .GET:
-            manager.GET(url, paramaters: params, success: success, failure: failure)
+            manager.GET(url, parameters: params, success: success, failure: failure)
         case .POST:
             manager.POST(url, parameters: params, success: success, failure: failure)
         case .DELETE:

@@ -25,7 +25,7 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
     var centralManager: CBCentralManager!
     var connectBtn : UIButton = UIButton()
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
     }
@@ -98,7 +98,7 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
                 //            NSLog(@"Receive value=%@",characteristic.value);
                                 //ここでBLEから配列を受け取る
                 var buf = UnsafePointer<UInt8>(characteristic.value.bytes)
-                println(buf[0])
+                print(buf[0])
                 var data = characteristic.value
        
                 return;
@@ -107,33 +107,33 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
     }
 
     //セントラルマネージャの状態変化を取得
-    func centralManagerDidUpdateState(central: CBCentralManager!) {
+    func centralManagerDidUpdateState(central: CBCentralManager) {
         
-        println("state \(central.state)");
+        print("state \(central.state)");
         switch (central.state) {
         case .PoweredOff:
-            println("Bluetoothの電源がOff")
+            print("Bluetoothの電源がOff")
         case .PoweredOn:
-            println("Bluetoothの電源はOn")
+            print("Bluetoothの電源はOn")
             // BLEデバイスの検出を開始.
             centralManager.scanForPeripheralsWithServices(nil, options: nil)
         case .Resetting:
-            println("レスティング状態")
+            print("レスティング状態")
         case .Unauthorized:
-            println("非認証状態")
+            print("非認証状態")
         case .Unknown:
-            println("不明")
+            print("不明")
         case .Unsupported:
-            println("非対応")
+            print("非対応")
         }
     }
     //スキャン結果を受け取る
-    func centralManager(central: CBCentralManager!,
-        didDiscoverPeripheral peripheral: CBPeripheral!,
-        advertisementData: [NSObject : AnyObject]!,
-        RSSI: NSNumber!)
+    func centralManager(central: CBCentralManager,
+        didDiscoverPeripheral peripheral: CBPeripheral,
+        advertisementData: [String : AnyObject],
+        RSSI: NSNumber)
     {
-        println("peripheral: \(peripheral)")
+        print("peripheral: \(peripheral)")
         var name: NSString? = advertisementData["kCBAdvDataLocalName"] as? NSString
         if (name == nil) {
             name = "no name";
@@ -149,9 +149,9 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
     Cellが選択された際に呼び出される.
     */
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("Num: \(indexPath.row)")
-        println("Uuid: \(bleUUIDs[indexPath.row])")
-        println("Name: \(bleName[indexPath.row])")
+        print("Num: \(indexPath.row)")
+        print("Uuid: \(bleUUIDs[indexPath.row])")
+        print("Name: \(bleName[indexPath.row])")
         
         
     }
@@ -164,7 +164,7 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
     // セルの内容を変更
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier:"Cell" )
+        let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier:"Cell" )
         cell.textLabel!.sizeToFit()
         cell.textLabel!.textColor = UIColor.greenColor()
         cell.textLabel!.text = "\(bleName[indexPath.row])"

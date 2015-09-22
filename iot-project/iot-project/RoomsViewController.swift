@@ -16,7 +16,7 @@ class RoomsViewController: UIViewController {
         super.viewDidLoad()
         
         roomsArray = NSMutableArray(array: ["部屋1", "部屋2", "部屋3"])
-        println(roomsArray)
+        print(roomsArray)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,10 +37,10 @@ class RoomsViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "ToMemberView") {
-            println("メンバー一覧画面(作成者用)へ移動")
+            print("メンバー一覧画面(作成者用)へ移動")
             
         } else if (segue.identifier == "ToMemberWaittingView") {
-            println("メンバー一覧画面へ移動")
+            print("メンバー一覧画面へ移動")
             
         }
     }
