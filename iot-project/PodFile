@@ -1,2 +1,7 @@
-platform :ios, "6.0"
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.1'
+use_frameworks!
 pod 'AFNetworking'
+pod 'Socket.IO-Client-Swift'
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'GoogleMaps'

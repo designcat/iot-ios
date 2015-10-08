@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56B1B326428AF9BD8B1F76A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9CE950B0999EC5DD16C01C /* libPods.a */; };
-		CFB0CFBA1B7CE0AB00B9B41A /* BLEBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB0CFB91B7CE0AB00B9B41A /* BLEBaseClass.m */; };
+		2623A3BF47C9F35E3EE107F8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C436FE7A7552DBAA1A651B12 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C8178BEC1BB1643F0056751F /* PlayMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8178BEB1BB1643F0056751F /* PlayMapView.swift */; settings = {ASSET_TAGS = (); }; };
+		C8178BEE1BB170820056751F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8178BED1BB170820056751F /* CoreLocation.framework */; };
+		C8178BF01BB170B30056751F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C8178BEF1BB170B30056751F /* libsqlite3.0.tbd */; };
+		C852D6821BB105F1002882B9 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C852D6811BB105F1002882B9 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C852D6841BB14487002882B9 /* UserRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C852D6831BB14487002882B9 /* UserRegistration.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C852D6861BB1449D002882B9 /* UserRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C852D6851BB1449D002882B9 /* UserRegistrationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C8CC0BC61B89C1B00038E7DD /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC11B89C1B00038E7DD /* MembersViewController.swift */; };
+		C8CC0BC71B89C1B00038E7DD /* MembersWaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC21B89C1B00038E7DD /* MembersWaitingViewController.swift */; };
+		C8CC0BC81B89C1B00038E7DD /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */; };
+		C8CC0BC91B89C1B00038E7DD /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC41B89C1B00038E7DD /* RoomsViewController.swift */; };
+		C8CC0BCA1B89C1B00038E7DD /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC0BC51B89C1B00038E7DD /* TimerViewController.swift */; };
+		C8CEF8B51BAFBAA8005B4459 /* ConnectBluetooth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8B41BAFBAA8005B4459 /* ConnectBluetooth.storyboard */; };
+		C8CEF8B91BAFBACA005B4459 /* Members.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8B81BAFBACA005B4459 /* Members.storyboard */; };
+		C8CEF8BB1BAFBADA005B4459 /* MembersWaiting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8BA1BAFBADA005B4459 /* MembersWaiting.storyboard */; };
+		C8CEF8BD1BAFBAE4005B4459 /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8BC1BAFBAE4005B4459 /* Play.storyboard */; };
+		C8CEF8BF1BAFBAEE005B4459 /* Rooms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8BE1BAFBAEE005B4459 /* Rooms.storyboard */; };
+		C8CEF8C11BAFBB06005B4459 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CEF8C01BAFBB06005B4459 /* Timer.storyboard */; };
+		CF276DB31BAA9DDA00F18335 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF276DB21BAA9DDA00F18335 /* ApiManager.swift */; };
+		CFB0CFEF1B7ED52000B9B41A /* BLEBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB0CFEE1B7ED52000B9B41A /* BLEBaseClass.m */; };
 		CFC0F3101B70832A004CA7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */; };
 		CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F3111B70832A004CA7F0 /* iot_project.xcdatamodeld */; };
-		CFC0F3151B70832A004CA7F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F3141B70832A004CA7F0 /* ViewController.swift */; };
-		CFC0F3181B70832A004CA7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC0F3161B70832A004CA7F0 /* Main.storyboard */; };
 		CFC0F31A1B70832A004CA7F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC0F3191B70832A004CA7F0 /* Images.xcassets */; };
 		CFC0F31D1B70832A004CA7F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC0F31B1B70832A004CA7F0 /* LaunchScreen.xib */; };
 		CFC0F3291B70832A004CA7F0 /* iot_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0F3281B70832A004CA7F0 /* iot_projectTests.swift */; };
+		CFCAB2FB1B824685007DCDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCAB2F91B824685007DCDC5 /* Main.storyboard */; };
+		CFCAB2FF1B82473C007DCDC5 /* ConnectBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */; };
+		CFCAB3011B8247B3007DCDC5 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAB3001B8247B3007DCDC5 /* TopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,20 +50,41 @@
 /* Begin PBXFileReference section */
 		02860C3172F5C5725C43DF74 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2EF80024441C9CCE95B910BC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		AC9CE950B0999EC5DD16C01C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFB0CFB81B7CE0AB00B9B41A /* BLEBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEBaseClass.h; sourceTree = "<group>"; };
-		CFB0CFB91B7CE0AB00B9B41A /* BLEBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEBaseClass.m; sourceTree = "<group>"; };
+		C436FE7A7552DBAA1A651B12 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8178BEB1BB1643F0056751F /* PlayMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMapView.swift; sourceTree = "<group>"; };
+		C8178BED1BB170820056751F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C8178BEF1BB170B30056751F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C852D6811BB105F1002882B9 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Pods/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		C852D6831BB14487002882B9 /* UserRegistration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserRegistration.storyboard; sourceTree = "<group>"; };
+		C852D6851BB1449D002882B9 /* UserRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewController.swift; sourceTree = "<group>"; };
+		C8CC0BC11B89C1B00038E7DD /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		C8CC0BC21B89C1B00038E7DD /* MembersWaitingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersWaitingViewController.swift; sourceTree = "<group>"; };
+		C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		C8CC0BC41B89C1B00038E7DD /* RoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		C8CC0BC51B89C1B00038E7DD /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		C8CEF8B41BAFBAA8005B4459 /* ConnectBluetooth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConnectBluetooth.storyboard; sourceTree = "<group>"; };
+		C8CEF8B81BAFBACA005B4459 /* Members.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Members.storyboard; sourceTree = "<group>"; };
+		C8CEF8BA1BAFBADA005B4459 /* MembersWaiting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MembersWaiting.storyboard; sourceTree = "<group>"; };
+		C8CEF8BC1BAFBAE4005B4459 /* Play.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Play.storyboard; sourceTree = "<group>"; };
+		C8CEF8BE1BAFBAEE005B4459 /* Rooms.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rooms.storyboard; sourceTree = "<group>"; };
+		C8CEF8C01BAFBB06005B4459 /* Timer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		CF276DB21BAA9DDA00F18335 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		CFB0CFEC1B7ED52000B9B41A /* iot-project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iot-project-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		CFB0CFED1B7ED52000B9B41A /* BLEBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEBaseClass.h; path = ../BLEBaseClass.h; sourceTree = "<group>"; };
+		CFB0CFEE1B7ED52000B9B41A /* BLEBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLEBaseClass.m; path = ../BLEBaseClass.m; sourceTree = "<group>"; };
+		CFB0CFF11B7ED56800B9B41A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CFC0F30A1B70832A004CA7F0 /* iot-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iot-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC0F30E1B70832A004CA7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC0F3121B70832A004CA7F0 /* iot_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iot_project.xcdatamodel; sourceTree = "<group>"; };
-		CFC0F3141B70832A004CA7F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CFC0F3171B70832A004CA7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFC0F3191B70832A004CA7F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CFC0F31C1B70832A004CA7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CFC0F3221B70832A004CA7F0 /* iot-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iot-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC0F3271B70832A004CA7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFC0F3281B70832A004CA7F0 /* iot_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iot_projectTests.swift; sourceTree = "<group>"; };
+		CFCAB2FA1B824685007DCDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectBluetoothViewController.swift; sourceTree = "<group>"; };
+		CFCAB3001B8247B3007DCDC5 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56B1B326428AF9BD8B1F76A2 /* libPods.a in Frameworks */,
+				C8178BF01BB170B30056751F /* libsqlite3.0.tbd in Frameworks */,
+				C8178BEE1BB170820056751F /* CoreLocation.framework in Frameworks */,
+				2623A3BF47C9F35E3EE107F8 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +111,9 @@
 		0422C5A95F9E8668DA379E94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC9CE950B0999EC5DD16C01C /* libPods.a */,
+				C8178BEF1BB170B30056751F /* libsqlite3.0.tbd */,
+				C8178BED1BB170820056751F /* CoreLocation.framework */,
+				C436FE7A7552DBAA1A651B12 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,9 +127,73 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C802CA931BB005AB001CA049 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFCAB2F91B824685007DCDC5 /* Main.storyboard */,
+				C8CEF8B41BAFBAA8005B4459 /* ConnectBluetooth.storyboard */,
+				C852D6831BB14487002882B9 /* UserRegistration.storyboard */,
+				C8CEF8BE1BAFBAEE005B4459 /* Rooms.storyboard */,
+				C8CEF8B81BAFBACA005B4459 /* Members.storyboard */,
+				C8CEF8BA1BAFBADA005B4459 /* MembersWaiting.storyboard */,
+				C8CEF8BC1BAFBAE4005B4459 /* Play.storyboard */,
+				C8CEF8C01BAFBB06005B4459 /* Timer.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C8178BEA1BB164080056751F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8178BEB1BB1643F0056751F /* PlayMapView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C8CC0BC01B89C1750038E7DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFCAB2FE1B82473C007DCDC5 /* ConnectBluetoothViewController.swift */,
+				CFCAB3001B8247B3007DCDC5 /* TopViewController.swift */,
+				C852D6851BB1449D002882B9 /* UserRegistrationViewController.swift */,
+				C8CC0BC41B89C1B00038E7DD /* RoomsViewController.swift */,
+				C8CC0BC11B89C1B00038E7DD /* MembersViewController.swift */,
+				C8CC0BC21B89C1B00038E7DD /* MembersWaitingViewController.swift */,
+				C8CC0BC31B89C1B00038E7DD /* PlayViewController.swift */,
+				C8CC0BC51B89C1B00038E7DD /* TimerViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CF276DB11BAA9DB000F18335 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF276DB21BAA9DDA00F18335 /* ApiManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CF276DB41BAAB26E00F18335 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CFB0CFF01B7ED53900B9B41A /* BLE */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		CFB0CFF01B7ED53900B9B41A /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				CFB0CFED1B7ED52000B9B41A /* BLEBaseClass.h */,
+				CFB0CFEE1B7ED52000B9B41A /* BLEBaseClass.m */,
+			);
+			name = BLE;
+			sourceTree = "<group>";
+		};
 		CFC0F3011B708329004CA7F0 = {
 			isa = PBXGroup;
 			children = (
+				C852D6811BB105F1002882B9 /* MBProgressHUD.h */,
 				CFC0F30C1B70832A004CA7F0 /* iot-project */,
 				CFC0F3251B70832A004CA7F0 /* iot-projectTests */,
 				CFC0F30B1B70832A004CA7F0 /* Products */,
@@ -106,14 +214,17 @@
 		CFC0F30C1B70832A004CA7F0 /* iot-project */ = {
 			isa = PBXGroup;
 			children = (
+				CF276DB41BAAB26E00F18335 /* lib */,
+				CF276DB11BAA9DB000F18335 /* Model */,
+				C8CC0BC01B89C1750038E7DD /* Controller */,
+				C8178BEA1BB164080056751F /* View */,
 				CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */,
-				CFC0F3141B70832A004CA7F0 /* ViewController.swift */,
-				CFC0F3161B70832A004CA7F0 /* Main.storyboard */,
+				C802CA931BB005AB001CA049 /* View */,
 				CFC0F3191B70832A004CA7F0 /* Images.xcassets */,
 				CFC0F31B1B70832A004CA7F0 /* LaunchScreen.xib */,
 				CFC0F3111B70832A004CA7F0 /* iot_project.xcdatamodeld */,
-				CFB0CFB81B7CE0AB00B9B41A /* BLEBaseClass.h */,
-				CFB0CFB91B7CE0AB00B9B41A /* BLEBaseClass.m */,
+				CFB0CFF11B7ED56800B9B41A /* PrefixHeader.pch */,
+				CFB0CFEC1B7ED52000B9B41A /* iot-project-Bridging-Header.h */,
 				CFC0F30D1B70832A004CA7F0 /* Supporting Files */,
 			);
 			path = "iot-project";
@@ -146,6 +257,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C852D6801BB10548002882B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C852D6821BB105F1002882B9 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		CFC0F3091B70832A004CA7F0 /* iot-project */ = {
 			isa = PBXNativeTarget;
@@ -156,6 +278,8 @@
 				CFC0F3071B70832A004CA7F0 /* Frameworks */,
 				CFC0F3081B70832A004CA7F0 /* Resources */,
 				8213286F12CCF4E29FA56890 /* Copy Pods Resources */,
+				CAB9F68822173DA5F3C0BB11 /* Embed Pods Frameworks */,
+				C852D6801BB10548002882B9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -190,11 +314,14 @@
 		CFC0F3021B708329004CA7F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Shinnosuke Komiya";
 				TargetAttributes = {
 					CFC0F3091B70832A004CA7F0 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = T66965A94D;
 					};
 					CFC0F3211B70832A004CA7F0 = {
 						CreatedOnToolsVersion = 6.4;
@@ -226,9 +353,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC0F3181B70832A004CA7F0 /* Main.storyboard in Resources */,
+				C8CEF8C11BAFBB06005B4459 /* Timer.storyboard in Resources */,
 				CFC0F31D1B70832A004CA7F0 /* LaunchScreen.xib in Resources */,
 				CFC0F31A1B70832A004CA7F0 /* Images.xcassets in Resources */,
+				C8CEF8B51BAFBAA8005B4459 /* ConnectBluetooth.storyboard in Resources */,
+				C8CEF8BB1BAFBADA005B4459 /* MembersWaiting.storyboard in Resources */,
+				C8CEF8BD1BAFBAE4005B4459 /* Play.storyboard in Resources */,
+				CFCAB2FB1B824685007DCDC5 /* Main.storyboard in Resources */,
+				C8CEF8B91BAFBACA005B4459 /* Members.storyboard in Resources */,
+				C852D6841BB14487002882B9 /* UserRegistration.storyboard in Resources */,
+				C8CEF8BF1BAFBAEE005B4459 /* Rooms.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +391,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CAB9F68822173DA5F3C0BB11 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CC54749CAE15716D48522668 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,10 +428,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC0F3151B70832A004CA7F0 /* ViewController.swift in Sources */,
-				CFB0CFBA1B7CE0AB00B9B41A /* BLEBaseClass.m in Sources */,
+				CFB0CFEF1B7ED52000B9B41A /* BLEBaseClass.m in Sources */,
+				C852D6861BB1449D002882B9 /* UserRegistrationViewController.swift in Sources */,
+				C8CC0BC81B89C1B00038E7DD /* PlayViewController.swift in Sources */,
+				C8178BEC1BB1643F0056751F /* PlayMapView.swift in Sources */,
 				CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */,
+				C8CC0BC71B89C1B00038E7DD /* MembersWaitingViewController.swift in Sources */,
+				CF276DB31BAA9DDA00F18335 /* ApiManager.swift in Sources */,
+				CFCAB2FF1B82473C007DCDC5 /* ConnectBluetoothViewController.swift in Sources */,
+				C8CC0BC61B89C1B00038E7DD /* MembersViewController.swift in Sources */,
+				C8CC0BC91B89C1B00038E7DD /* RoomsViewController.swift in Sources */,
 				CFC0F3101B70832A004CA7F0 /* AppDelegate.swift in Sources */,
+				C8CC0BCA1B89C1B00038E7DD /* TimerViewController.swift in Sources */,
+				CFCAB3011B8247B3007DCDC5 /* TopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,20 +463,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CFC0F3161B70832A004CA7F0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CFC0F3171B70832A004CA7F0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CFC0F31B1B70832A004CA7F0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CFC0F31C1B70832A004CA7F0 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CFCAB2F91B824685007DCDC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFCAB2FA1B824685007DCDC5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,9 +569,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iot-project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iot-project-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -423,9 +588,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iot-project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iot-project-Bridging-Header.h";
 			};
 			name = Release;
 		};
