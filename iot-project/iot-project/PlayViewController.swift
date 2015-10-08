@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import GoogleMaps
 
-class PlayViewController: UIViewController {
+class PlayViewController: UIViewController, GMSMapViewDelegate {
     
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var pointLabel: UILabel!
@@ -30,8 +31,22 @@ class PlayViewController: UIViewController {
         }
         */
         
+        
         //ナビゲーションバーを非表示
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        
+//        let camera = GMSCameraPosition.cameraWithLatitude(-33.86,
+//            longitude: 151.20, zoom: 6)
+//        let mapView = GMSMapView.mapWithFrame(CGRectMake(0, 100, 320, 400), camera: camera)
+//        self.view.addSubview(mapView)
+        
+        // とりあえずの地図を表示
+        let camera = GMSCameraPosition.cameraWithLatitude(-33.86,longitude: 151.20, zoom: 6)
+        let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
+//        mapView.delegate = self
+//        mapView.myLocationEnabled = true
+//        self.view = mapView
     }
 
     override func didReceiveMemoryWarning() {

@@ -37,7 +37,6 @@
                     </view>
                     <connections>
                         <outlet property="membersTableView" destination="OvP-2p-sgb" id="3c4-EU-dxt"/>
-                        <outlet property="startBtnTouched" destination="MiB-CS-eC2" id="2dA-PN-NEJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xt6-0M-ayL" userLabel="First Responder" sceneMemberID="firstResponder"/>

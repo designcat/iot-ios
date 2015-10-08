@@ -47,7 +47,7 @@ class MembersViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func transitionToPlayView() {
-        let storyboard = UIStoryboard(name: "play", bundle: nil)
+        let storyboard = UIStoryboard(name: "Play", bundle: nil)
         let nextView = storyboard.instantiateViewControllerWithIdentifier("playVC")
         self.navigationController?.pushViewController(nextView, animated: true)
     }

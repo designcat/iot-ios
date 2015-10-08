@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Play View Controller-->
@@ -17,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8g-Ws-63K">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8g-Ws-63K">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="118"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-X3-7vi">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-X3-7vi">
                                         <rect key="frame" x="16" y="26" width="240" height="77"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQa-XL-sR4">
@@ -36,7 +37,7 @@
                                             <constraint firstAttribute="height" constant="77" id="cV2-se-WTw"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Petan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oS-24-6cl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Petan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oS-24-6cl">
                                         <rect key="frame" x="270" y="26" width="61" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" red="0.9882352941176471" green="0.97647058823529409" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -47,19 +48,22 @@
                                 <constraints>
                                     <constraint firstItem="Fac-X3-7vi" firstAttribute="top" secondItem="t8g-Ws-63K" secondAttribute="top" constant="26" id="2oF-Fk-FRl"/>
                                     <constraint firstItem="Fac-X3-7vi" firstAttribute="leading" secondItem="t8g-Ws-63K" secondAttribute="leading" constant="25" id="IPh-Fw-Zfx"/>
+                                    <constraint firstAttribute="height" constant="118" id="Jg2-1K-4Pe"/>
                                     <constraint firstItem="Fac-X3-7vi" firstAttribute="centerY" secondItem="t8g-Ws-63K" secondAttribute="centerY" id="VIw-TU-dBf"/>
                                     <constraint firstItem="Fac-X3-7vi" firstAttribute="leading" secondItem="t8g-Ws-63K" secondAttribute="leading" constant="16" id="Z0F-lr-44n"/>
                                     <constraint firstItem="2oS-24-6cl" firstAttribute="leading" secondItem="Fac-X3-7vi" secondAttribute="trailing" constant="14" id="kdE-Q9-VZH"/>
                                     <constraint firstItem="2oS-24-6cl" firstAttribute="top" secondItem="t8g-Ws-63K" secondAttribute="top" constant="26" id="ltM-RK-TzB"/>
+                                    <constraint firstItem="Fac-X3-7vi" firstAttribute="leading" secondItem="t8g-Ws-63K" secondAttribute="leading" constant="16" id="xr1-lw-jh2"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="IPh-Fw-Zfx"/>
                                         <exclude reference="VIw-TU-dBf"/>
+                                        <exclude reference="Z0F-lr-44n"/>
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-7M-DOA">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-7M-DOA">
                                 <rect key="frame" x="268" y="54" width="332" height="51"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:20:25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIe-rU-MYj">
@@ -70,8 +74,48 @@
                                     </label>
                                 </subviews>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4pw-ob-jsj">
+                                <rect key="frame" x="0.0" y="117" width="600" height="483"/>
+                                <color key="backgroundColor" red="0.81129214638157898" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="LVk-vr-k1h"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LVk-vr-k1h"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t8g-Ws-63K" firstAttribute="top" secondItem="MJw-EL-PKN" secondAttribute="topMargin" id="55A-gD-x7a"/>
+                            <constraint firstItem="4pw-ob-jsj" firstAttribute="top" secondItem="cRp-7M-DOA" secondAttribute="bottom" constant="12" id="6Z3-2W-glx"/>
+                            <constraint firstItem="4pw-ob-jsj" firstAttribute="top" secondItem="cRp-7M-DOA" secondAttribute="bottom" constant="12" id="DIM-7O-rOd"/>
+                            <constraint firstItem="4pw-ob-jsj" firstAttribute="top" secondItem="cRp-7M-DOA" secondAttribute="bottom" constant="12" id="Euj-sh-RjL"/>
+                            <constraint firstItem="4pw-ob-jsj" firstAttribute="leading" secondItem="MJw-EL-PKN" secondAttribute="leadingMargin" constant="-20" id="HkJ-XG-CgF"/>
+                            <constraint firstItem="t8g-Ws-63K" firstAttribute="leading" secondItem="MJw-EL-PKN" secondAttribute="leadingMargin" id="Kuu-fm-wYG"/>
+                            <constraint firstItem="4pw-ob-jsj" firstAttribute="centerX" secondItem="MJw-EL-PKN" secondAttribute="centerX" id="SWG-qp-A0Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4pw-ob-jsj" secondAttribute="trailing" constant="-20" id="U2y-JA-3ys"/>
+                            <constraint firstItem="xzW-P3-kkS" firstAttribute="top" secondItem="4pw-ob-jsj" secondAttribute="bottom" id="UEN-qH-Dhx"/>
+                            <constraint firstItem="xzW-P3-kkS" firstAttribute="top" secondItem="4pw-ob-jsj" secondAttribute="bottom" id="UEV-Yj-m2J"/>
+                            <constraint firstItem="xzW-P3-kkS" firstAttribute="top" secondItem="4pw-ob-jsj" secondAttribute="bottom" id="crb-Un-IQT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4pw-ob-jsj" secondAttribute="trailing" constant="-20" id="fpN-Ou-dCw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t8g-Ws-63K" secondAttribute="trailing" constant="-20" id="lKI-U5-IXB"/>
+                            <constraint firstItem="t8g-Ws-63K" firstAttribute="leading" secondItem="MJw-EL-PKN" secondAttribute="leadingMargin" constant="-20" id="vRM-cB-ggY"/>
+                            <constraint firstItem="4pw-ob-jsj" firstAttribute="leading" secondItem="MJw-EL-PKN" secondAttribute="leadingMargin" constant="-20" id="xjw-iV-Pmn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6Z3-2W-glx"/>
+                                <exclude reference="DIM-7O-rOd"/>
+                                <exclude reference="HkJ-XG-CgF"/>
+                                <exclude reference="SWG-qp-A0Q"/>
+                                <exclude reference="U2y-JA-3ys"/>
+                                <exclude reference="UEN-qH-Dhx"/>
+                                <exclude reference="crb-Un-IQT"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="headerView" destination="t8g-Ws-63K" id="7nb-KX-25a"/>

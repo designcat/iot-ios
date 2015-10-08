@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2623A3BF47C9F35E3EE107F8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C436FE7A7552DBAA1A651B12 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C8178BEC1BB1643F0056751F /* PlayMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8178BEB1BB1643F0056751F /* PlayMapView.swift */; settings = {ASSET_TAGS = (); }; };
+		C8178BEE1BB170820056751F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8178BED1BB170820056751F /* CoreLocation.framework */; };
+		C8178BF01BB170B30056751F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C8178BEF1BB170B30056751F /* libsqlite3.0.tbd */; };
 		C852D6821BB105F1002882B9 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C852D6811BB105F1002882B9 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C852D6841BB14487002882B9 /* UserRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C852D6831BB14487002882B9 /* UserRegistration.storyboard */; settings = {ASSET_TAGS = (); }; };
 		C852D6861BB1449D002882B9 /* UserRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C852D6851BB1449D002882B9 /* UserRegistrationViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -48,6 +51,9 @@
 		02860C3172F5C5725C43DF74 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2EF80024441C9CCE95B910BC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C436FE7A7552DBAA1A651B12 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8178BEB1BB1643F0056751F /* PlayMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMapView.swift; sourceTree = "<group>"; };
+		C8178BED1BB170820056751F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C8178BEF1BB170B30056751F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		C852D6811BB105F1002882B9 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Pods/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
 		C852D6831BB14487002882B9 /* UserRegistration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserRegistration.storyboard; sourceTree = "<group>"; };
 		C852D6851BB1449D002882B9 /* UserRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8178BF01BB170B30056751F /* libsqlite3.0.tbd in Frameworks */,
+				C8178BEE1BB170820056751F /* CoreLocation.framework in Frameworks */,
 				2623A3BF47C9F35E3EE107F8 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +111,8 @@
 		0422C5A95F9E8668DA379E94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8178BEF1BB170B30056751F /* libsqlite3.0.tbd */,
+				C8178BED1BB170820056751F /* CoreLocation.framework */,
 				C436FE7A7552DBAA1A651B12 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -128,6 +138,14 @@
 				C8CEF8BA1BAFBADA005B4459 /* MembersWaiting.storyboard */,
 				C8CEF8BC1BAFBAE4005B4459 /* Play.storyboard */,
 				C8CEF8C01BAFBB06005B4459 /* Timer.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C8178BEA1BB164080056751F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8178BEB1BB1643F0056751F /* PlayMapView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -199,6 +217,7 @@
 				CF276DB41BAAB26E00F18335 /* lib */,
 				CF276DB11BAA9DB000F18335 /* Model */,
 				C8CC0BC01B89C1750038E7DD /* Controller */,
+				C8178BEA1BB164080056751F /* View */,
 				CFC0F30F1B70832A004CA7F0 /* AppDelegate.swift */,
 				C802CA931BB005AB001CA049 /* View */,
 				CFC0F3191B70832A004CA7F0 /* Images.xcassets */,
@@ -302,6 +321,7 @@
 				TargetAttributes = {
 					CFC0F3091B70832A004CA7F0 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = T66965A94D;
 					};
 					CFC0F3211B70832A004CA7F0 = {
 						CreatedOnToolsVersion = 6.4;
@@ -411,6 +431,7 @@
 				CFB0CFEF1B7ED52000B9B41A /* BLEBaseClass.m in Sources */,
 				C852D6861BB1449D002882B9 /* UserRegistrationViewController.swift in Sources */,
 				C8CC0BC81B89C1B00038E7DD /* PlayViewController.swift in Sources */,
+				C8178BEC1BB1643F0056751F /* PlayMapView.swift in Sources */,
 				CFC0F3131B70832A004CA7F0 /* iot_project.xcdatamodeld in Sources */,
 				C8CC0BC71B89C1B00038E7DD /* MembersWaitingViewController.swift in Sources */,
 				CF276DB31BAA9DDA00F18335 /* ApiManager.swift in Sources */,
@@ -549,9 +570,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iot-project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iot-project-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -564,9 +589,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iot-project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iot-project-Bridging-Header.h";
 			};
 			name = Release;

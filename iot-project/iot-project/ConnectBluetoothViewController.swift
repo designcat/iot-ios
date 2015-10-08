@@ -9,6 +9,8 @@
 import UIKit
 import CoreBluetooth
 
+import Socket_IO_Client_Swift
+
 class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, BLEDeviceClassDelegate, CBCentralManagerDelegate {
     //セントラルマネージャのプロパティ定義
     var peripheral: CBPeripheral!
@@ -58,6 +60,25 @@ class ConnectBluetoothViewController: UIViewController, UITableViewDataSource, U
         
         // UIボタンをViewに追加.
         self.view.addSubview(connectBtn);
+        
+        socketioTest()
+    }
+    
+//    var socket: SocketIOClient!
+    
+    func socketioTest() {
+        // ここから
+        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        print(appDelegate.num)
+        
+        let socket = appDelegate.socket
+        
+        socket.on("from_server") { (data, emitter) in
+            if let message = data as? [String] {
+//                self.myLabel.text = message[0]
+                print(message[0])
+            }
+        }
     }
     
     /*
